@@ -31,4 +31,5 @@ int main (int argc, char *argv[])
             printf ("(%d) %s\n", seconds, message);
         }
     }
+    return 0;
 }

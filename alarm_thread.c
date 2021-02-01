@@ -46,14 +46,15 @@ int main (int argc, char *argv[])
          * separated from the seconds by whitespace.
          */
         if (sscanf (line, "%d %64[^\n]", 
-            &alarm->seconds, alarm->message) < 2) {
+                    &alarm->seconds, alarm->message) < 2) {
             fprintf (stderr, "Bad command\n");
             free (alarm);
         } else {
             status = pthread_create (
-                &thread, NULL, alarm_thread, alarm);
+                    &thread, NULL, alarm_thread, alarm);
             if (status != 0)
                 err_abort (status, "Create alarm thread");
         }
     }
+    return 0;
 }

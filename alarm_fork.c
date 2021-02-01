@@ -27,7 +27,7 @@ int main (int argc, char *argv[])
          * separated from the seconds by whitespace.
          */
         if (sscanf (line, "%d %64[^\n]", 
-            &seconds, message) < 2) {
+                    &seconds, message) < 2) {
             fprintf (stderr, "Bad command\n");
         } else {
             pid = fork ();
@@ -53,4 +53,5 @@ int main (int argc, char *argv[])
             }
         }
     }
+    return 0;
 }
