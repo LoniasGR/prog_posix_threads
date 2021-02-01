@@ -9,7 +9,7 @@
 #include <string.h>
 #include <errno.h>
 
-int main (int argc, char *argv[])
+int main (void)
 {
     pthread_t thread;
     int status;

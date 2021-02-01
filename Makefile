@@ -1,6 +1,6 @@
 CC=gcc
 DEBUGFLAGS=-DDEBUG
-CFLAGS=-pthread $(DEBUGFLAGS)
+CFLAGS=-pthread -Wall -Wextra $(DEBUGFLAGS)
 RTFLAGS=-lrt
 
 SOURCES=alarm.c	alarm_cond.c	alarm_fork.c	alarm_mutex.c	\

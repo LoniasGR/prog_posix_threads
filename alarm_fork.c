@@ -8,9 +8,8 @@
 #include <wait.h>
 #include "errors.h"
 
-int main (int argc, char *argv[])
+int main (void)
 {
-    int status;
     char line[128];
     int seconds;
     pid_t pid;

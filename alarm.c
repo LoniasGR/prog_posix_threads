@@ -7,7 +7,7 @@
  */
 #include "errors.h"
 
-int main (int argc, char *argv[])
+int main (void)
 {
     int seconds;
     char line[128];
